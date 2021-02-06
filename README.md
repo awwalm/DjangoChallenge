@@ -30,6 +30,8 @@ FLUSH PRIVILEGES;
 
 Then navigate to ```nosairis/nosairis/management``` and import the ```SWITCHES_ALL_DATABASE_EXPORT.sql``` file into the ```switches``` database and you're good to go!
 
+IMPORTANT ⚠: Edit the ```settings.py``` file and the ```SECRET_KEY``` variable to point to your own [unique Django secret key](https://stackoverflow.com/a/47117966).
+
 ## Usage
 
 From root dir, ```cd``` to ```nosairis/nosairis``` and run the following commands to get started.
