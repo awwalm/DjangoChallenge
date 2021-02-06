@@ -38,6 +38,11 @@ From root dir, ```cd``` to ```nosairis/nosairis``` and run the following command
 python manage.py runserver
 ```
 
+## Screenshots
+![image](https://user-images.githubusercontent.com/67423428/107130203-354ea980-6906-11eb-9684-a8c0f5f28170.png)
+
+![image](https://user-images.githubusercontent.com/67423428/107130231-6af39280-6906-11eb-9c3a-7e93ae982161.png)
+
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
