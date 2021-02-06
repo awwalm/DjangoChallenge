@@ -1,6 +1,11 @@
 **/.idea/workspace.xml
 **/.idea/tasks.xml
 
+.env
+**/.env
+**/venv
+**/venv/sk.py
+
 **/.log
 **/.pot
 **/.pyc
