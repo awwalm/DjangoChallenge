@@ -1,0 +1,9 @@
+.menu {
+list-style: none; text-align: center;
+}
+.menu > li { display: inline-block;
+}
+.menu > li > a { text-decoration: none; color: #000; margin: 0 0.3em; font-size: 30px;
+}
+.menu > li > a.active { padding-bottom: 0.3em; border-bottom: 2px solid #528DEA;
+}

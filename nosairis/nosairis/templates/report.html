@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+    <meta charset="UTF-8">
+    <title>Alert Report Page</title>
+</head>
+<body>
+
+<!-- this gives base.html power to override this page -->
+{% extends "base.html" %}
+<!-- the block tag from base.html will override this particular content -->
+{% block content %}
+<center>
+<br>Records Of Unavailable Switches
+<hr  width="800">
+<table class="pings" width="800" cellpadding="2" border="1"
+       bordercolor="white" bgcolor="#2832C2" style="font-family: Lato;">
+    <thead>
+        <tr style="color: white;">
+            <th>No</th>
+            <th>Switch</th>
+            <th>Alert type</th>
+            <th>Alert Date/Time</th>
+            <th>Email Notification Date/Time</th>
+        </tr>
+    </thead>
+    <tbody>
+
+    {% for report in reports %}
+    <tr bgcolor="#D8F0FF">
+        <td>{{ report.pk }}</td>
+        <td>SW-{{ report.switch_name }}</td>
+        <td>{% if report.alert_type == '0' %}Ping Lost{% endif %}</td>
+        <td>{{ report.alert_date_time }}</td>
+        <td>{{ report.email_date_time }}</td>
+    </tr>
+    {% endfor %}
+
+    </tbody>
+</table>
+</center>
+
+{% endblock %}
+</body>
+</html>

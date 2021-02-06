@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Ping Charts</title>
+</head>
+<body>
+
+<center>
+<!-- this gives base.html power to override this page -->
+{% extends "base.html" %}
+<!-- the block tag from base.html will override this particular content -->
+{% block content %}
+<br>Ping Availability Charts
+<!-- Plotly charts are generated herewith -->
+    {% autoescape off %} <!-- switch 1 graph -->
+    {{ plot_div }}<br>
+    {% endautoescape %}
+
+    {% autoescape off %} <!-- switch 2 graph -->
+    {{ plot2_div }}<br>
+    {% endautoescape %}
+
+    {% autoescape off %} <!-- switch 3 graph -->
+    {{ plot3_div }}<br>
+    {% endautoescape %}
+{% endblock %}
+</center>
+
+</body>
+</html>

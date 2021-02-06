@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+
+<!-- register the static directory -->
+{% load static %}
+<html lang="en" style="font-family: Lato">
+<head>
+    <meta charset="UTF-8">
+    <title>Switches & Pings App</title>
+
+    <!-- load the static directory -->
+    <link rel="stylesheet" href="{% static 'css/base.css' %}?v=01">
+</head>
+<body>
+
+<ul class="menu">
+
+    <!-- this references the url patterns variable with the name 'home' in urls.py -->
+    <li>
+        <!-- <a href="{% url 'home' %}">Home</a> -->
+        <a class="{% if section == 'home' %}active{% endif %}" href="{% url 'home' %}">Home</a>
+        <a class="{% if section == 'report' %}active{% else %}{% endif %}" href="{% url 'report' %}">Alert Report</a>
+        <a class="{% if section == 'chart' %}active{% else %}{% endif %}" href="{% url 'chart' %}">Charts</a>
+    </li>
+</ul>
+
+{% block title %} {% endblock %}
+
+<p> {% block content %}Made By Awwal Mohammed For N'Osairis (c) 2021{% endblock %} </p>
+</body>
+</html>
