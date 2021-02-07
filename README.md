@@ -26,9 +26,15 @@ CREATE DATABASE switches CHARACTER SET UTF8;
 CREATE USER madjango@localhost IDENTIFIED BY '123django';
 GRANT ALL PRIVILEGES ON switches.* TO madjango@localhost;
 FLUSH PRIVILEGES;
+EXIT;
+```
+Restart MySQL again (this time as user ```madjango```)
+```mysql
+USE switches;
 ```
 
-Then navigate to ```nosairis/nosairis/management``` and import the ```<preferred_format>SWITCHES_ALL_DATABASE_EXPORT``` file (in SQL or CSV extension) into the ```switches``` database and you're good to go!
+Open the directory ```nosairis/nosairis/management/exports``` and execute ALL the ```.sql``` files on ```switches```.
+If all else fails, copy paste the contents each of the files and run directly in MySQL command line interface, and you're good to go!
 
 ⚠ IMPORTANT: Edit the ```settings.py``` file and the ```SECRET_KEY``` variable to point to your own [unique Django secret key](https://stackoverflow.com/a/47117966).
 
