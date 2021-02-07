@@ -36,7 +36,7 @@ USE switches;
 Open the directory ```nosairis/nosairis/management/exports``` and execute ALL the ```.sql``` files on ```switches```.
 If all else fails, copy paste the contents each of the files and run directly in MySQL command line interface, and you're good to go!
 
-⚠ IMPORTANT: Edit the ```settings.py``` file and the ```SECRET_KEY``` variable to point to your own [unique Django secret key](https://stackoverflow.com/a/47117966).
+**⚠ IMPORTANT:** Edit the ```settings.py``` file and the ```SECRET_KEY``` variable to point to your own [unique Django secret key](https://stackoverflow.com/a/47117966).
 
 ## Usage
 
