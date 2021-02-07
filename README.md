@@ -28,9 +28,9 @@ GRANT ALL PRIVILEGES ON switches.* TO madjango@localhost;
 FLUSH PRIVILEGES;
 ```
 
-Then navigate to ```nosairis/nosairis/management``` and import the ```SWITCHES_ALL_DATABASE_EXPORT.sql``` file into the ```switches``` database and you're good to go!
+Then navigate to ```nosairis/nosairis/management``` and import the ```<preferred_format>SWITCHES_ALL_DATABASE_EXPORT``` file (in SQL or CSV extension) into the ```switches``` database and you're good to go!
 
-IMPORTANT ⚠: Edit the ```settings.py``` file and the ```SECRET_KEY``` variable to point to your own [unique Django secret key](https://stackoverflow.com/a/47117966).
+⚠ IMPORTANT: Edit the ```settings.py``` file and the ```SECRET_KEY``` variable to point to your own [unique Django secret key](https://stackoverflow.com/a/47117966).
 
 ## Usage
 
