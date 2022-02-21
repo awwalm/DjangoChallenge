@@ -34,7 +34,7 @@ def chart(request):
     cursor.execute('SELECT * FROM switches.switches_switch1;')
     records = cursor.fetchall()
 
-    # SECOND GRAPH
+    # SECOND GRAPH VARIABLES
     connection2 = mysql.connector.connect(host='localhost',
                                           database='switches',
                                           user='madjango',

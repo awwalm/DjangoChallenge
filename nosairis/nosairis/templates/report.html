@@ -13,6 +13,7 @@
 <center>
 <br>Records Of Unavailable Switches
 <hr  width="800">
+
 <table class="pings" width="800" cellpadding="2" border="1"
        bordercolor="white" bgcolor="#2832C2" style="font-family: Lato;">
     <thead>
@@ -25,7 +26,6 @@
         </tr>
     </thead>
     <tbody>
-
     {% for report in reports %}
     <tr bgcolor="#D8F0FF">
         <td>{{ report.pk }}</td>
@@ -35,9 +35,9 @@
         <td>{{ report.email_date_time }}</td>
     </tr>
     {% endfor %}
-
     </tbody>
 </table>
+
 </center>
 
 {% endblock %}
