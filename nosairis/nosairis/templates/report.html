@@ -27,7 +27,7 @@
     </thead>
     <tbody>
     {% for report in reports %}
-    <tr bgcolor="#D8F0FF">
+    <tr bgcolor='{% ifequal forloop.counter|divisibleby:"2" True %} #E2EFF8 {% else %} #A6DCFD {% endifequal %}'>
         <td>{{ report.pk }}</td>
         <td>SW-{{ report.switch_name }}</td>
         <td>{% if report.alert_type == '0' %}Ping Lost{% endif %}</td>
