@@ -1,6 +1,3 @@
-**/.idea/workspace.xml
-**/.idea/tasks.xml
-
 .env
 **/.env
 **/venv
@@ -16,7 +13,9 @@
 # Backup files # 
 **/*.bak 
 
-# If you are using PyCharm # 
+# If you are using PyCharm #
+# No, screw this, we ust ignore ./idea completely
+.idea/
 **/.idea/**/workspace.xml 
 **/.idea/**/tasks.xml 
 **/.idea/dictionaries 
