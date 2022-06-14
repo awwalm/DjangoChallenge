@@ -5,6 +5,9 @@ A simple Python web application for tracking ping status between switches and te
 ## Installation
 
 #### Dependencies
+
+**⚠ UPDATE: This project was created with Django 3.x and Python 3.6. Both are no longer the latest versions so ensure to account for compatibility issues.**
+
 This project was created with [PyCharm](https://www.jetbrains.com/pycharm/) 
  so, ideally, a direct import should hypothetically work. Otherwise, move the nosairis folder from root directory to your desired directory and then install the following dependencies using the package manager [pip](https://pip.pypa.io/en/stable/).
 
