@@ -1,4 +1,4 @@
-# Coding Challenge: Python Web Application With Django
+# Network Switch Status Tracker (Django/MySQL)
 
 A simple Python web application for tracking ping status between switches and terminals, using Django and MySQL. This coding challenge also represents the creator's first foray into the world of Django.
 
